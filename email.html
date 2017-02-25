@@ -1,20 +1,19 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<html>
 <body>
-
-<h2>Send e-mail to someone@example.com:</h2>
-
-<form action="mailto:rezakhandan6@gmail.com" method="post" enctype="text/plain">
-Name:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Comment:<br>
-<textarea rows="10" cols="30">
-</textarea><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
+<form id="contact_form" action="email.php" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Your name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Your email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Your message:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" />
 </form>
-
-</body>
+</body>						
 </html>
